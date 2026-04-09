@@ -1,0 +1,5 @@
+﻿HF/api/routes/completions.ts(358,9): error TS2322: Type '"full"' is not assignable to type 'SpeedTier'.
+HF/api/routes/feedback.ts(91,16): error TS7053: Element implicitly has an 'any' type because expression of type 'any' can't be used to index type 'Record<ContextType, LearnedProfile>'.
+src/components/SettingsModal.tsx(883,16): error TS2304: Cannot find name 'Skull'.
+src/components/SettingsModal.tsx(1004,20): error TS2304: Cannot find name 'Skull'.
+src/components/SettingsModal.tsx(1018,20): error TS2304: Cannot find name 'Skull'.

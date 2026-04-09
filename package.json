@@ -1,0 +1,63 @@
+{
+  "name": "open-power",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Open Power - polished AI workspace for chat, terminal use, and model racing",
+  "license": "AGPL-3.0",
+  "bin": {
+    "openpower": "./cli/index.js"
+  },
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "api": "tsx api/server.ts",
+    "api:dev": "tsx watch api/server.ts",
+    "build:cli:win": "pkg cli/index.js --targets node18-win-x64 --output dist/openpower.exe",
+    "build:cli:all": "pkg cli/index.js --targets node18-win-x64,node18-linux-x64,node18-macos-x64 --out-path dist"
+  },
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "commander": "^14.0.3",
+    "cors": "^2.8.6",
+    "express": "^5.2.1",
+    "framer-motion": "^11.0.0",
+    "helmet": "^8.1.0",
+    "js-yaml": "^4.1.0",
+    "lucide-react": "^0.344.0",
+    "next": "^15.5.14",
+    "node-fetch": "^2.7.0",
+    "openai": "^4.28.0",
+    "ora": "^5.4.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-markdown": "^9.0.0",
+    "react-syntax-highlighter": "^16.1.1",
+    "tsx": "^4.21.0",
+    "uuid": "^9.0.0",
+    "zustand": "^4.5.0"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.6",
+    "@types/js-yaml": "^4.0.9",
+    "@types/node": "^20.11.0",
+    "@types/react": "^18.2.0",
+    "@types/react-dom": "^18.2.0",
+    "@types/react-syntax-highlighter": "^15.5.11",
+    "@types/uuid": "^9.0.8",
+    "autoprefixer": "^10.4.17",
+    "eslint": "^8.56.0",
+    "eslint-config-next": "^15.5.14",
+    "pkg": "^5.8.1",
+    "postcss": "^8.4.35",
+    "tailwindcss": "^3.4.1",
+    "typescript": "5.9.3"
+  },
+  "pkg": {
+    "assets": [
+      "cli/config.json"
+    ]
+  }
+}
