@@ -1,1 +1,21 @@
 node_modules
+
+# Next.js build output and cache
+.next/
+
+# Static export output
+out/
+
+# Local CLI build artifacts
+dist/
+
+# TypeScript incremental build cache
+tsconfig.tsbuildinfo
+
+# Misc local env/runtime files
+.env
+.env.*
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
